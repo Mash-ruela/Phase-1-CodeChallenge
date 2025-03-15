@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-
+    
     const ramens = [
       { id: 1, name: "Shoyu Ramen", restaurant: "Ichiran", image: "images/img1.jpeg", rating: 5, comment: "Delicious!" },
       { id: 2, name: "Miso Ramen", restaurant: "Menya", image: "images/img2.jpeg", rating: 4, comment: "Very flavorful!" },
