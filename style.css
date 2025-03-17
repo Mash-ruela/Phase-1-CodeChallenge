@@ -28,5 +28,15 @@
     border-radius: 8px;
   }
 
-  
-  
+ #ramen-form{
+    background-color: rgb(255, 248, 239);
+ }
+ .form-control{
+    width: 600px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 160px;
+ }
+ 
