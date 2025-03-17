@@ -1,9 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
     const ramens = [
-      { id: 1, name: "Shoyu Ramen", restaurant: "Ichiran", image: "images/img1.jpeg", rating: 5, comment: "Delicious!" },
-      { id: 2, name: "Miso Ramen", restaurant: "Menya", image: "images/img2.jpeg", rating: 4, comment: "Very flavorful!" },
-      { id: 3, name: "Tonkotsu Ramen", restaurant: "Ramen-ya", image: "images/img3.jpeg", rating: 4, comment: "Spectacularly amazing." }
+      { id: 1, name: "Shoyu Ramen", restaurant: "Ichiran", image: "images/shoyu.jpg", rating: 5, comment: "Delicious!" },
+      { id: 2, name: "Miso Ramen", restaurant: "Menya", image: "images/miso.jpeg", rating: 4, comment: "Very flavorful!" },
+      { id: 3, name: "Tonkotsu Ramen", restaurant: "Ramen-ya", image: "images/tonkotsu.jpeg", rating: 4, comment: "Spectacularly amazing." }
     ];
   
     function displayRamens() {
@@ -24,11 +23,15 @@ document.addEventListener('DOMContentLoaded', () => {
       const ramenRestaurant = document.getElementById('ramen-restaurant');
       const ramenRating = document.getElementById('ramen-rating');
       const ramenComment = document.getElementById('ramen-comment');
+      const ramenDetail = document.getElementById('ramen-detail');
   
       ramenName.textContent = ramen.name;
       ramenRestaurant.textContent = `Restaurant: ${ramen.restaurant}`;
       ramenRating.textContent = `Rating: ${ramen.rating}`;
       ramenComment.textContent = `Comment: ${ramen.comment}`;
+  
+      // Set the background image dynamically
+      ramenDetail.style.backgroundImage = `url(${ramen.image})`;
     }
   
     function addSubmitListener() {
@@ -57,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ramenForm.reset();
       });
     }
+  
     function main() {
       displayRamens();
       addSubmitListener();

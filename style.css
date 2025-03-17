@@ -1,0 +1,32 @@
+#ramen-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  #ramen-detail h2, #ramen-detail p {
+    margin: 10px 0;
+    color: aliceblue;
+    background-color: rgb(58, 53, 53);
+  }
+  
+  .ramen-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 8px;
+  }
+
+  
+  
