@@ -42,15 +42,17 @@ body{
  #ramen-form{
     width: 60px;
     max-width: 300px;
-    margin: auto;
+    margin: 5px;
     padding: 10px;
     border-radius: 10px;
  }
  .form-control{
-    width: 300px;
+    width: 600px;
     height: 40px;
     text-align: center;
     margin: 5px auto;
+    margin-left: 160px;
+    color: bisque;
  }
 
 
